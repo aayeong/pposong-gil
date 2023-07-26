@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPosong-Time</title>
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>PPOSONG</span> 
+            <i class="fa-solid fa-cloud" style="color: #9fd8f6;"></i>
+        </div>
+
+        <div class="status-bar__column">
+            <span>ver 0.0.1</span>   
+        </div>
+
+    </div>
+    
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <!-- # => 이전페이지 링크 필요 -->
+            <a href="#">
+                <i class="fa-solid fa-angle-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">뽀송길 검색 결과</h1>
+        </div>
+        <div class="alt-header__column">
+            <!-- 헤더 우측에 위치한 홈/마이페이지 버튼 -->
+            <nav class="screen-header__menu">
+                <ul class="screen-header__menu-list">
+                    <li  class="screen-header__menu-btn">
+                        <a class="screen-header__menu-link" href="home.html"><i class="fa-solid fa-house fa-lg"></i></a>
+                    </li>
+                    <li  class="screen-header__menu-btn">
+                            <a class="screen-header__menu-link" href="mypage.html"><i class="fa-solid fa-circle-user fa-lg"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+    <main class="main-screen pposongtime-screen">
+        
+        <!--페이지 상단 경로 요약 정보-->
+        <div class ="route-component">
+            <div class="route-component__time">
+                <h4 class="route-component__info">9호선 신반포역 <i class="fa-solid fa-arrow-right"></i> 숭실대학교 정보과학관</h4>
+                
+                <h4 class="route-component__total-time">44분</h4>
+                <h6 class="route-component__walk-time">도보 5분</h6>
+                <h6 class="route-component__vehicle-summary">
+                    <i class="fa-solid fa-bus"> 6411</i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <i class="fa-solid fa-bus"> 752</i>
+                </h6>
+            </div>
+        </div>
+
+        <!-- 뽀송타임 nav-bar -->
+        <div class="pposongtime-component">
+            <div class="pposongtime__title">
+                <h4>뽀송타임</h4>
+            </div>
+            <div class="pposongtime__subtitle">
+                <h6>출발 시간에 따른 강수 정보</h6>
+            </div>
+            
+            <nav class="time-nav">
+                <ul class="time-nav__list">
+                    <li class="time-nav__btn">
+                        <div class="time-nav__weather-icon"><i class="fa-solid fa-droplet fa-2x"></i></div>
+                        <div class="time-nav__weather-info">60</div>
+                        <a class="time-nav__link" href="#">12:20</a>
+                    </li>
+                    <li class="time-nav__btn">
+                        <div class="time-nav__weather-icon"><i class="fa-solid fa-droplet fa-2x"></i></div>
+                        <div class="time-nav__weather-info">120</div>
+                        <a class="time-nav__link" href="#">12:50</a>
+                    </li>
+                    <li class="time-nav__btn">
+                        <div class="time-nav__weather-icon"><i class="fa-solid fa-droplet fa-2x"></i></div>
+                        <div class="time-nav__weather-info">60</div>
+                        <a class="time-nav__link" href="#">13:20</a>
+                    </li>
+                    <li class="time-nav__btn">
+                        <div class="time-nav__weather-icon"><i class="fa-solid fa-droplet fa-2x"></i></div>
+                        <div class="time-nav__weather-info">90</div>
+                        <a class="time-nav__link" href="#">13:50</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- specific-component__1 -->
+        <div class="specific-component">
+
+            <div class="specific-way">
+                <div class="specific-icon">
+                    <div class="specific-icon__vehicle"><i class="fa-solid fa-person-walking fa-lg"></i>
+                    </div>
+                </div>
+    
+                <div class="specific-stop">
+                    <div class="specific-stop__name">9호선 신반포역</div>
+                    <div class="specific-stop__time">도보 2분 | 이동 예상 시간 12:20-12:22</div>
+                    <div class="specific-stop__whether">시간당 강수량 1.4mm</div>
+                </div>
+            </div>
+
+            <div class="specific-icon">
+                <div class="specific-icon__weather"><i class="fa-solid fa-droplet fa-2x"></i></div>
+                <div class="specific-icon__weather-info">
+                    <span>28</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- specific-component__2 -->
+        <div class="specific-component">
+
+            <div class="specific-way">
+                <div class="specific-icon">
+                    <div class="specific-icon__vehicle"><i class="fa-solid fa-bus "></i>
+                    </div>
+                </div>
+    
+                <div class="specific-stop">
+                    <div class="specific-stop__name">신반포역.세화여중고(중)</div>
+                    <div class="specific-stop__time">15분 | 이동 예상 시간 12:22-12:37</div>
+                    <div class="specific-stop__whether">시간당 강수량 0.6mm</div>
+                </div>
+
+            </div>
+
+
+            <div class="specific-icon">
+                <div class="specific-icon__weather"><i class="fa-solid fa-droplet fa-2x"></i></div>
+                <div class="specific-icon__weather-info">
+                    <span>-</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- specific-component__3 -->
+        <div class="specific-component">
+
+            <div class="specific-way">
+                <div class="specific-icon">
+                    <div class="specific-icon__vehicle"><i class="fa-solid fa-person-walking fa-lg"></i>
+                    </div>
+                </div>
+    
+                <div class="specific-stop">
+                    <div class="specific-stop__name">노들역(중)</div>
+                    <div class="specific-stop__time">도보 1분 | 이동 예상 시간 12:37-12:38</div>
+                    <div class="specific-stop__whether">시간당 강수량 0.4mm</div>
+                </div>
+            </div>
+
+            <div class="specific-icon">
+                <div class="specific-icon__weather"><i class="fa-solid fa-droplet fa-2x"></i></div>
+                <div class="specific-icon__weather-info">
+                    <span>4</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- specific-component__4 -->
+        <div class="specific-component">
+
+            <div class="specific-way">
+                <div class="specific-icon">
+                    <div class="specific-icon__vehicle"><i class="fa-solid fa-bus "></i>
+                    </div>
+                </div>
+    
+                <div class="specific-stop">
+                    <div class="specific-stop__name">숭실대별관앞</div>
+                    <div class="specific-stop__time">14분 | 이동 예상 시간 12:38-12:52</div>
+                    <div class="specific-stop__whether">시간당 강수량 1.4mm</div>
+                </div>
+
+            </div>
+
+
+            <div class="specific-icon">
+                <div class="specific-icon__weather"><i class="fa-solid fa-droplet fa-2x"></i></div>
+                <div class="specific-icon__weather-info">
+                    <span>-</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- specific-component__5 -->
+        <div class="specific-component">
+
+            <div class="specific-way">
+                <div class="specific-icon">
+                    <div class="specific-icon__vehicle"><i class="fa-solid fa-person-walking fa-lg"></i>
+                    </div>
+                </div>
+    
+                <div class="specific-stop">
+                    <div class="specific-stop__name">숭실대학교 정보과학관</div>
+                    <div class="specific-stop__time">도보 2분 | 이동 예상 시간 12:52-12:54</div>
+                    <div class="specific-stop__whether">시간당 강수량 1.4mm</div>
+                </div>
+            </div>
+
+            <div class="specific-icon">
+                <div class="specific-icon__weather"><i class="fa-solid fa-droplet fa-2x"></i></div>
+                <div class="specific-icon__weather-info">
+                    <span>28</span>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+
+    <script src="https://kit.fontawesome.com/660f4d6ed1.js" crossorigin="anonymous"></script>  
+</body>
+</html>
