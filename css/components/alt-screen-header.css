@@ -10,8 +10,9 @@
 
 .alt-header__title {
     font-family: 'Bagel Fat One', cursive;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
+    text-align: center;
 }
 
 .alt-header__column {

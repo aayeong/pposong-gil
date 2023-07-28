@@ -14,6 +14,7 @@
 .login-header__subtitle {
     width: 60%;
     opacity: 0.8;
+    padding: 20px;
 }
 
 .login-form {
@@ -63,4 +64,9 @@
 .login-form a:hover {
     transition: color 0.2s ease-in-out;
     color: rgba(159, 216, 246, 0.8);
+}
+
+.login-form a:last-child {
+    font-family: 'Bagel Fat One', cursive;
+    opacity: 0.8;
 }

@@ -10,7 +10,7 @@
 
 .screen-header__title {
     font-family: 'Bagel Fat One', cursive;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .screen-header__menu-btn i {
-    margin-left: 25px;
+    margin-left: 18px;
     color: black;
     font-size: 25px;
 }

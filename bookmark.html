@@ -30,7 +30,6 @@
             <h1 class="alt-header__title">즐겨찾기</h1>
         </div>
         <div class="alt-header__column">
-            <!-- 헤더 우측에 위치한 홈/마이페이지 버튼 -->
             <nav class="screen-header__menu">
                 <ul class="screen-header__menu-list">
                     <li  class="screen-header__menu-btn">
@@ -45,49 +44,52 @@
     </header>
 
     <main class="main-screen bookmark-screen">
+
+        <div class="bookmark-component">
+            <a href="pposongtime.html">
+                <div class="bookmark-column">
+                    <div class="bookmark__route-icon">
+                        <i class="fa-solid fa-route fa-xl"></i>
+                    </div>
+                    <div class="bookmark__info">
+                        <h4 class="bookmark__location">9호선 신반포역<i class="fa-solid fa-arrow-right"></i>숭실대학교 정보과학관</h4>
+                        <h6 class="bookmark__vehicle">
+                            <i class="fa-solid fa-bus"></i>6411
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <i class="fa-solid fa-bus"></i>752
+                        </h6>
+                    </div>
+                </div>
+            </a>
+            <div class="bookmark-column">
+                <div class="bookmark__star-icon">
+                    <i class="fa-solid fa-star fa-xl"></i>
+                </div>
+            </div>   
+        </div>
+
+        <div class="bookmark-component">
+            <a href="pposongtime.html">
+                <div class="bookmark-column">
+                    <div class="bookmark__route-icon">
+                        <i class="fa-solid fa-route fa-xl"></i>
+                    </div>
+                    <div class="bookmark__info">
+                        <h4 class="bookmark__location">스타벅스 남성역점<i class="fa-solid fa-arrow-right"></i>숭실대학교 정보과학관</h4>
+                        <h6 class="bookmark__vehicle"><i class="fa-solid fa-bus"></i>752</h6>
+                    </div>
+                </div>
+            </a>
+            <div class="bookmark-column">
+                <div class="bookmark__star-icon">
+                    <i class="fa-solid fa-star fa-xl"></i>
+                </div>
+            </div>   
+        </div>
         
-        <!-- bookmark-component 전체에 해당 경로 상세페이지 링크 걸어야 함-->
-        <div class="bookmark-component">
-            <div class="bookmark-column">
-                <div class="bookmark__route-icon">
-                    <i class="fa-solid fa-route fa-xl"></i>
-                </div>
-                <div class="bookmark__info">
-                    <h4 class="bookmark__location">스타벅스 남성역점<i class="fa-solid fa-arrow-right"></i>숭실대학교 정보과학관</h4>
-                    <h6 class="bookmark__vehicle"><i class="fa-solid fa-bus"></i>752</h6>
-                </div>
-            </div>
-            <div class="bookmark-column">
-                <div class="bookmark__star-icon">
-                    <i class="fa-solid fa-star fa-xl"></i>
-                </div>
-            </div>   
-        </div>
-
-        <div class="bookmark-component">
-            <div class="bookmark-column">
-                <div class="bookmark__route-icon">
-                    <i class="fa-solid fa-route fa-xl"></i>
-                </div>
-                <div class="bookmark__info">
-                    <h4 class="bookmark__location">9호선 신반포역<i class="fa-solid fa-arrow-right"></i>숭실대학교 정보과학관</h4>
-                    <h6 class="bookmark__vehicle">
-                        <i class="fa-solid fa-bus"></i>6411
-                        <i class="fa-solid fa-chevron-right"></i>
-                        <i class="fa-solid fa-bus"></i>752
-                    </h6>
-                </div>
-            </div>
-            <div class="bookmark-column">
-                <div class="bookmark__star-icon">
-                    <i class="fa-solid fa-star fa-xl"></i>
-                </div>
-            </div>   
-        </div>
-
     </main>
     
-
     <script src="https://kit.fontawesome.com/660f4d6ed1.js" crossorigin="anonymous"></script>  
+    <script src="js/bookmark.js"></script>
 </body>
 </html>
