@@ -21,3 +21,8 @@
     animation: hideIntroScreen 0.3s ease-in-out forwards;
     animation-delay: 1.5s;
 }
+
+#intro-screen .intro-header {
+    background-color: tomato;
+    margin-top: -150px;
+}
