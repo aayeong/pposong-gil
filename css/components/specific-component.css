@@ -1,36 +1,45 @@
 /* 뽀송타임 상세 경로 컴포넌트 */
 .specific-component {
     background-color:rgba(240, 248, 255, 0.4);
-    padding:10px 20px;
+    padding:10px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px dashed rgba(0,0,0, 0.5);
 }
 
-.specific-way {
+.specific-column {
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100px;
 }
 
-.specific-icon__vehicle {
-    font-size: 25px;
+.specific-column:last-child {
+    display: flex;
+    flex-direction: column;
 }
-.specific-icon__weather {
+
+.specific-column i {
+    padding: 0px 20px;
+    font-size: 30px;
+}
+
+.specific-column .fa-bus {
+    font-size: 25px;
+    padding: 0px 15px;
+}
+
+.specific-icon__wheather {
     color: var(--skyblue);
 }
-.specific-icon__weather-info {
-    
+.specific-icon__wheather-info {
     text-align: center;
     margin-top: 7px;
     font-weight: 600;
 }
 
-.specific-stop {
-    padding-left: 20px;
-    
-    font-size: 16px;
-}
+
 .specific-stop__name {
     font-size: 18px;
     font-weight: 600;
@@ -41,7 +50,7 @@
     color: var(--grey);
     font-weight: 600;
 }
-.specific-stop__whether {
+.specific-stop__wheather {
     color:rgb(0, 62, 104);
     font-weight: 600;
 }

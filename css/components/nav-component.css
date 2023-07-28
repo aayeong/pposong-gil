@@ -7,13 +7,12 @@
 
 .pposongtime__title {
     font-family: 'Bagel Fat One', cursive;
-    padding: 12px;
+    padding: 15px;
     font-size: 22px;
 }
 
 .pposongtime__subtitle {
-    padding: 0px 10px 10px;
-
+    padding: 0px 15px 12px 15px;
 }
 
 /* 뽀송타임 시간 선택 네비게이션 바 */
@@ -35,15 +34,15 @@
     font-weight: 600;
 }
 
-.time-nav__weather-icon,
-.time-nav__weather-info {
+.time-nav__wheather-icon,
+.time-nav__wheather-info {
     padding-bottom:10px;
     text-align: center;
     color: var(--deepblue);
     
 }
 
-.time-nav__weather-info {
+.time-nav__wheather-info {
     margin-bottom: 10px;
     font-weight: 600;
 }
