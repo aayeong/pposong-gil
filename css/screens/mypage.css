@@ -43,18 +43,15 @@
 
 /* mypage nav-bar */
 .mypage-nav {
-    background-color:aliceblue;
-    padding: 20px 0px;
-}
-
-.mypage-nav__list {
-
+    margin-top: 20px;
 }
 
 .mypage-nav__btn {
    padding: 15px;
-   background-color: beige;
-   margin-bottom: 10px;
+   background-color:aliceblue;
+   border-top-right-radius: 30px;
+   margin-bottom: 15px;
+
 }
 
 .mypage-nav__btn:hover {
@@ -78,7 +75,6 @@
 }
 
 .mypage-nav__link-text {
-    background-color: aqua;
     font-size: 16px;
     opacity: 0.8;
     text-align: center;
