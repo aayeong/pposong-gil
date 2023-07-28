@@ -30,10 +30,10 @@
     padding: 0px 15px;
 }
 
-.specific-icon__wheather {
+.specific-icon__weather {
     color: var(--skyblue);
 }
-.specific-icon__wheather-info {
+.specific-icon__weather-info {
     text-align: center;
     margin-top: 7px;
     font-weight: 600;
@@ -50,7 +50,7 @@
     color: var(--grey);
     font-weight: 600;
 }
-.specific-stop__wheather {
+.specific-stop__weather {
     color:rgb(0, 62, 104);
     font-weight: 600;
 }

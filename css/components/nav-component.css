@@ -34,15 +34,15 @@
     font-weight: 600;
 }
 
-.time-nav__wheather-icon,
-.time-nav__wheather-info {
+.time-nav__weather-icon,
+.time-nav__weather-info {
     padding-bottom:10px;
     text-align: center;
     color: var(--deepblue);
     
 }
 
-.time-nav__wheather-info {
+.time-nav__weather-info {
     margin-bottom: 10px;
     font-weight: 600;
 }
