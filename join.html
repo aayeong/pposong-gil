@@ -18,21 +18,21 @@
             <span>ver 0.0.1</span>
         </div>
     </div>
-
-    <header class="login-header">
-        <h1 class="login-header__title">뽀송길</h1>
-        <p class="login-header__subtitle">
-            뽀송길에 오신걸 환영해요!</p>
-    </header>
-
-    <!-- 서버 연동 시 get=>post로 수정 -->
-    <form class="login-form joinin-form" action="welcome.html" method="get">
-        <input name="username" required type="text" placeholder="ID" />
-        <input name="password" required type="password" placeholder="Password" />
-        <input name="password" required type="password" placeholder="Password Confirm" />
-        <input type="submit" value="회원가입"/>
-        <a href="index.html">로그인 페이지로 돌아가기</a>
-    </form>
+    <main class="main-screen">
+        <header class="login-header">
+            <h1 class="login-header__title">뽀송길</h1>
+            <p class="login-header__subtitle">
+                뽀송길에 오신걸 환영해요!</p>
+        </header>
+        <!-- 서버 연동 시 get=>post로 수정 -->
+        <form class="login-form joinin-form" action="welcome.html" method="get">
+            <input name="username" required type="text" placeholder="ID" />
+            <input name="password" required type="password" placeholder="Password" />
+            <input name="password" required type="password" placeholder="Password Confirm" />
+            <input type="submit" value="회원가입"/>
+            <a href="index.html">로그인 페이지로 돌아가기</a>
+        </form>
+    </main>
 
     <script src="https://kit.fontawesome.com/660f4d6ed1.js" crossorigin="anonymous"></script>
     <script src="js/join.js"></script>

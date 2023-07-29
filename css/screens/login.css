@@ -74,18 +74,3 @@
     font-family: 'Bagel Fat One', cursive;
     opacity: 0.8;
 }
-
-@keyframes slideInFromBottom {
-    0% {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.login-screen {
-    animation: slideInFromBottom 1s ease-out;
-}

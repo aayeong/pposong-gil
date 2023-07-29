@@ -23,8 +23,20 @@ body {
     /*font-family: 'Open Sans', sans-serif;*/
     font-family: 'Pangolin', 'Open Sans', sans-serif, cursive;
 }
+/* Page Animation */
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 .main-screen {
     padding: 0px 20px;
+    animation: slideInFromBottom 1s ease-out;
 }
 
