@@ -9,6 +9,7 @@
 @import "components/nav-component.css";
 @import "components/specific-component.css";
 @import "components/alt-screen-header.css";
+@import "components/footer.css";
 
 /* Screens */
 @import "screens/intro.css";

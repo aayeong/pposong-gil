@@ -21,7 +21,7 @@
 .login-form {
     display: flex;
     flex-direction: column;
-    margin: 0px 70px;
+    margin: 0px 60px;
 }
 
 .login-form input {
