@@ -1,6 +1,6 @@
 .login-header {
-    margin-top: 90px;
-    margin-bottom: 40px;
+    margin-top: 70px;
+    margin-bottom: 15px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
 }
 .login-header__title {
     font-family: 'Bagel Fat One', cursive;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 50px;
     font-weight: 400;
 }
@@ -21,7 +21,7 @@
 .login-form {
     display: flex;
     flex-direction: column;
-    margin: 0px 60px;
+    margin: 0px 50px;
 }
 
 .login-form input {
