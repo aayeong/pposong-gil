@@ -4,12 +4,15 @@
     text-align: center;
 }
 
+.welcome-header {
+    margin-bottom: 80px;
+}
+
 .welcome-screen a {
     font-family: 'Bagel Fat One', cursive;
     font-size: 18px;
     color: white;
-    padding: 30px;
-    margin-top: -40px;
+    padding: 25px;
     background-color: var(--deepblue);
     border-radius: 40px;
 }
