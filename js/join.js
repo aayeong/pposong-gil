@@ -17,4 +17,3 @@ joininForm.addEventListener("submit", handleJoininSubmit);
 /* 아이디 중복 체크 */
 /* 비밀번호 확인 및 일치 여부 */
 /* 회원가입 정보를 서버로 데이터 전송하는 함수 */
-
