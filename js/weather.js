@@ -33,8 +33,8 @@ function onGeoSuccess(position) {
             weatherIcon.src = `img/weather-icon/${weatherIconCode}.png`;
             weather.innerText = data.weather[0].main;
 
-            humid.innerText = `습도 ${data.main.humidity}`;
-            wind.innerText = `풍속 ${data.wind.speed}`;
+            humid.innerText = `습도 ${data.main.humidity}%`;
+            wind.innerText = `풍속 ${data.wind.speed}m/s`;
             
         })
 }
