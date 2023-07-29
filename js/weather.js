@@ -45,7 +45,7 @@ function onGeoSuccess(position) {
 
 
 function onGeoError() {
-    alert("Can't find your location.");
+    alert("Error: 위치 추적을 허용해 주세요.");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
