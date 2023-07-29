@@ -1,3 +1,89 @@
+/* 홈화면 닐씨 정보 */
+.home-component {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.home-column {
+    display: flex;
+    background-color:aliceblue;
+    padding: 20px;
+    border-radius: 35px;
+    width: 50%;
+    margin: 0px 10px;
+    box-shadow: 0 5px 5px -5px var(--grey);
+}
+
+.home-pposong,
+.home-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    width: 100%;
+}
+
+.home-weather > * {
+    width: 100%;
+}
+
+.home-weather span {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.home-weather .location {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.home-weather .temp-now {
+    font-size: 40px;
+}
+
+.home-weather .temp-feel {
+    color: var(--grey);
+}
+
+.home-weather .weather-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* 뽀송길 찾기 */
+.home-pposong {
+    background-color: var(--babyblue);
+}
+
+.home-pposong__title {
+    font-size: 30px;
+    font-family: 'Bagel Fat One', cursive;
+    margin-bottom: 10px;
+}
+
+.home-pposong__img {
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+}
+
+.home-notice {
+    width:100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    background-color:antiquewhite;
+}
+
+.home-notice i {
+    color: tomato;
+}
+
+.home-notice__text {
+    margin-left: 15px;
+}
+
 @keyframes hideIntroScreen {
     from {
         opacity: 1;
@@ -23,5 +109,5 @@
 }
 
 #intro-screen .intro-header {
-    margin-top: -100px;
+    margin-top: -80px;
 }
