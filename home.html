@@ -45,30 +45,27 @@
     <main class="main-screen home-screen">
         <!-- 메인 홈 화면 -->
         <div class="home-component">
-            <div class="home-column home-weather">
-                <div class="location">
-                    <i class="fa-solid fa-location-arrow"></i>
-                    <span class="location-name">Location</span>
+                <div class="home-column home-weather">
+                    <div class="location">
+                        <i class="fa-solid fa-location-arrow"></i>
+                        <span class="location-name"></span>
+                    </div>
+                    
+                        <span class="temp-now">--.--°</span>
+                        <span class="temp-feel">체감온도 --.--°</span>
+    
+                        <img class="weather-icon"/>
+                        <span class="weather-now">Weather</span>
+    
+                    <span class="humid">습도 --%</span>
+                    <span class="wind">풍속 -.-m/s</span>
                 </div>
-                
-                    <span class="temp-now">--.--°</span>
-                    <span class="temp-feel">체감온도 --.--°</span>
-
-                    <img class="weather-icon"/>
-                    <span class="weather-now">Weather</span>
-
-                <span class="humid">습도 --%</span>
-                <span class="wind">풍속 -.-m/s</span>
-            </div>
             
-            <div class="home-column home-pposong">
-                <span class="home-pposong__title">뽀송길 찾기</span>
-                <span class="home-pposong__subtitle">뽀송한 길로 안내해 드릴게요!</span>
-                <img class="home-pposong__img" src="img/pposonggil/pposong-icon.png"/>
-            </div>
-                
-            
-
+                <div class="home-column home-pposong">
+                    <span class="home-pposong__title">뽀송길 찾기</span>
+                    <span class="home-pposong__subtitle">뽀송한 길로 안내해 드릴게요!</span>
+                    <img class="home-pposong__img" src="img/pposonggil/pposong-icon.png"/>
+                </div>
         </div>
         
         <div class="home-component">
@@ -90,7 +87,8 @@
     </div>
 
     <script src="https://kit.fontawesome.com/660f4d6ed1.js" crossorigin="anonymous"></script>
-    <script src="js/weather.js"></script>
     <script src="js/back.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>

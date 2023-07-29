@@ -6,6 +6,16 @@
     margin-bottom: 10px;
     background-color: aliceblue;
     border-left: 7px solid var(--skyblue);
+    /* animation effect */
+    transition: opacity 0.7s ease;
+}
+/*animation effect*/
+.fade-out {
+    opacity: 1;
+  }
+/*animation effect*/
+.fade-out-done {
+    opacity: 0;
 }
 
 .bookmark-column {
