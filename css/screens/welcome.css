@@ -1,0 +1,35 @@
+.welcome-screen {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome-screen a {
+    font-family: 'Bagel Fat One', cursive;
+    font-size: 18px;
+    color: white;
+    padding: 30px;
+    margin-top: -40px;
+    background-color: var(--deepblue);
+    border-radius: 40px;
+}
+
+.welcome-screen a:hover {
+    transition: background-color 0.2s ease-in-out;
+    background-color: var(--skyblue);
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.welcome-screen {
+    animation: slideInFromBottom 1s ease-out;
+}

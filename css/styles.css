@@ -17,6 +17,7 @@
 @import "screens/bookmark.css";
 @import "screens/result.css";
 @import "screens/home.css";
+@import "screens/welcome.css";
 
 body {
     /*font-family: 'Open Sans', sans-serif;*/
