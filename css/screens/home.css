@@ -127,11 +127,11 @@
 .hourly-weather {
     font-family: 'Open Sans', sans-serif;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-bottom: 70px;
     font-size: 15px;
-    width: 100%;
     background-color:rgb(255, 248, 240);
 }
 .hourly-time {
