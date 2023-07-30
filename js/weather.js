@@ -35,6 +35,20 @@ function onGeoSuccess(position) {
 
             humid.innerText = `습도 ${data.main.humidity}%`;
             wind.innerText = `풍속 ${data.wind.speed}m/s`;
+
+            /* 날씨 정보 추가 
+            const sunrise = document.querySelector(".sunrise");
+            const sunset = document.querySelector(".sunset");
+            const tempMax = document.querySelector(".temp-max");
+            const tempMin = document.querySelector(".temp-min");
+            const cloud = document.querySelector(".cloud-now");
+
+            sunrise.innerText = `${data.sys.sunrise}`;
+            sunset.innerText=`${data.sys.sunset}`;
+            tempMax.innerText=`최고  ${data.temp_max}°`;
+            tempMin.innerText=`최저 ${data.temp_min}°`;
+            cloud.innerText=`구름 ${data.clouds}%`; */
+
             
         })
 }

@@ -1,8 +1,8 @@
 :root {
     --skyblue: #9FD8F6;
     --babyblue: #8edbffab;
-    --yellow: #ffdf6f;
+    --yellow: rgb(255, 223, 111);
     --grey: rgba(0, 0, 0, 0.6);
-    --deepblue: #052133;
+    --deepblue: rgb(5, 33, 51);
     --orange: bisque;
 }

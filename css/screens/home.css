@@ -85,6 +85,76 @@
     margin-left: 15px;
 }
 
+/* 데모용 추가 */
+.sun-info,
+.temp-info,
+.cloud-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+.sun-info > *,
+.temp-info > *,
+.cloud-info > * {
+    width: 100%;
+}
+
+.home-weather__specific {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home-weather__specific i {
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.sun-info i {
+    color: var(--yellow);
+}
+
+.temp-info i {
+    color:coral
+}
+
+.cloud-info i {
+    color: var(--babyblue);
+}
+
+.hourly-weather {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:rgb(255, 248, 240);
+}
+.hourly-time {
+    padding:10px;
+    margin-bottom: -20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.hourly-time * {
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.rain i {
+    color: var(--skyblue);
+}
+
+.hour-info {
+    font-weight: 600;
+}
+
 @keyframes hideIntroScreen {
     from {
         opacity: 1;
