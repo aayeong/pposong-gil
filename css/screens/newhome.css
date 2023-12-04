@@ -1,0 +1,37 @@
+.newhome-screen {
+    margin-top: -15px;
+}
+
+#map {
+    display: flex;
+    flex-direction: column;
+}
+
+#map .time-nav {
+    background-color: transparent;
+    margin-top: 100px;
+}
+
+#map .time-nav__btn {
+    cursor: pointer;
+    background-color: white;
+    padding:10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+#map .time-nav__btn.clicked {
+    transition: background-color 0.2s ease-in-out;
+    background-color: var(--yellow);
+}
+
+.bottom {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border-radius: 25px 25px 0px 0px;
+    position: fixed;
+    bottom: 0;
+}
