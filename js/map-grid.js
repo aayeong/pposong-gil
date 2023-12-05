@@ -132,8 +132,8 @@ var locArr = [
     hideGrid(grid_objects);
     // 격자 개수만큼 반복
     for (var idx = 0; idx < grid_count; idx++) {
-      var fillColor = getFillColor(receivedData[idx][time].RN1);
-      var fillOpacity = fillColor === "#FFFFFF" ? 0 : 0.4; // 조건에 따라 fillOpacity 설정
+      //var fillColor = getFillColor(receivedData[idx][time].RN1);
+      //var fillOpacity = fillColor === "#FFFFFF" ? 0 : 0.4; // 조건에 따라 fillOpacity 설정
   
       grid_objects[idx] = new kakao.maps.Rectangle({
         bounds: grid_bounds[idx], // 그려질 사각형의 영역정보입니다
@@ -141,8 +141,10 @@ var locArr = [
         strokeColor: "#FF0000", // 선의 색깔입니다
         strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
         strokeStyle: "solid", // 선의 스타일입니다
+        /*
         fillColor: fillColor, // 채우기 색깔입니다
         fillOpacity: fillOpacity, // 채우기 불투명도 입니다
+        */
       });
   
       // 지도에 사각형을 표시합니다
