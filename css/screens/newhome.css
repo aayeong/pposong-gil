@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     width: 100%; /* viewport의 가로 너비에 맞춤 */
-    max-width: 100%; /* 최대 가로 너비 설정 */
+    max-width: 100%;
 }
 
 #map .time-nav {
@@ -32,27 +32,41 @@
     background-color: var(--yellow);
 }
 
-#map .bookmark {
-    padding: 0px 10px;
+#map .buttons {
+    padding: 0px 10px 10px 10px;
     display: flex; 
     justify-content: flex-end;
 }
 
-#map .bookmark-btn {
+#map .bookmark-btn, .location-btn {
     cursor: pointer;
     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
     background-color: var(--deepblue);
     border-radius: 50%;
-    padding: 10px 12.5px;
+    font-size: 16px;
+    /* 가로,세로 정중앙에 배치*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-#map .bookmark i {
-    font-size: 16px;
+#map .bookmark-btn i {
     color: white;
+    padding: 10px 12px;
+}
+
+#map .location-btn i {
+    color: var(--yellow);
+    padding: 10px;
 }
 
 #map .fa-bookmark.active {
     font-weight: 800;
+}
+
+#map .fa-location-crosshairs.active {
+    color: tomato;
 }
 
 #map .bottom.initial {
@@ -63,7 +77,8 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 150px;
+    height: 30%;
+    max-height: 30%;
     padding: 40px 0px 20px 0px;
     background-color: white;
     border-radius: 25px 25px 0px 0px;
