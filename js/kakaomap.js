@@ -6,37 +6,39 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
   
+/* 현재 위치에 마크업 및 포커스 */
+// HTML5의 geolocation으로 사용할 수 있는지 확인합니다
+if (navigator.geolocation) {
 
-/*
-// 마커를 표시할 위치입니다 
-var position =  new kakao.maps.LatLng(33.450701, 126.570667);
+    // GeoLocation을 이용해서 접속 위치를 얻어옵니다
+    navigator.geolocation.getCurrentPosition(function(position) {
+        
+        var lat = position.coords.latitude, // 위도
+            lon = position.coords.longitude; // 경도
+        
+        var locPosition = new kakao.maps.LatLng(lat, lon); // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다       
+        // 마커를 표시합니다
+        displayMarker(locPosition);
+            
+      });
+    
+} else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
+    
+    var locPosition = new kakao.maps.LatLng(37.566826, 126.9786567),    
+        message = 'geolocation을 사용할수 없어요..'
+        
+    displayMarker(locPosition);
+}
 
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-  position: position,
-  clickable: true // 마커를 클릭했을 때 지도의 클릭 이벤트가 발생하지 않도록 설정합니다
-});
+// 지도에 마커와 인포윈도우를 표시하는 함수입니다
+function displayMarker(locPosition) {
 
-// 아래 코드는 위의 마커를 생성하는 코드에서 clickable: true 와 같이
-// 마커를 클릭했을 때 지도의 클릭 이벤트가 발생하지 않도록 설정합니다
-// marker.setClickable(true);
-
-// 마커를 지도에 표시합니다.
-marker.setMap(map);
-
-// 마커를 클릭했을 때 마커 위에 표시할 인포윈도우를 생성합니다
-var iwContent = '<div style="padding:5px;">Hello World!</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-    iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
-
-// 인포윈도우를 생성합니다
-var infowindow = new kakao.maps.InfoWindow({
-    content : iwContent,
-    removable : iwRemoveable
-});
-
-// 마커에 클릭이벤트를 등록합니다
-kakao.maps.event.addListener(marker, 'click', function() {
-      // 마커 위에 인포윈도우를 표시합니다
-      infowindow.open(map, marker);  
-});
-*/
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({  
+        map: map, 
+        position: locPosition
+    }); 
+   
+    // 지도 중심좌표를 접속위치로 변경합니다
+    map.setCenter(locPosition);      
+}    

@@ -70,6 +70,7 @@ var locArr = [
       }
     }
   }
+  
   // 강수량에 따른 격자 색(하늘색 --> 검정색)
   function getFillColor(rainfall) {
     var fillColor = "#000000";
@@ -114,23 +115,27 @@ var locArr = [
   
     return fillColor;
   }
-  
   // 버튼 클릭 시 배경색 변경 함수
-  function changeBtnColor(index) {
+  function clickedBtn(index) {
     const buttons = document.querySelectorAll('.time-nav__btn');
-    // 이전에 clicked 클래스가 추가된 요소가 있을 수 있으므로 모든 요소에서 클래스 제거
-    buttons.forEach(button => {
+    const isAlreayClicked = buttons[index].classList.contains('clicked');
+    hideGrid(grid_objects);
+    // 클릭된 버튼 재클릭 시
+    if(isAlreayClicked) {
+      buttons[index].classList.remove('clicked');
+    }
+    else{
+      // 이전에 clicked 클래스가 추가된 요소가 있을 수 있으므로 모든 요소에서 클래스 제거
+      buttons.forEach(button => {
         button.classList.remove('clicked');
-    });
-    // 클릭된 버튼에만 clicked 클래스 추가
-    buttons[index].classList.add('clicked');
+      });
+      // 클릭된 버튼에만 clicked 클래스 추가
+      buttons[index].classList.add('clicked');
+      showGrid(index);
+    }
   }
 
   function showGrid(time) {
-    // grid_objects = new Array(grid_count);
-    changeBtnColor(time);
-    hideGrid(grid_objects);
-    // 격자 개수만큼 반복
     for (var idx = 0; idx < grid_count; idx++) {
       //var fillColor = getFillColor(receivedData[idx][time].RN1);
       //var fillOpacity = fillColor === "#FFFFFF" ? 0 : 0.4; // 조건에 따라 fillOpacity 설정
@@ -141,12 +146,9 @@ var locArr = [
         strokeColor: "#FF0000", // 선의 색깔입니다
         strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
         strokeStyle: "solid", // 선의 스타일입니다
-        /*
-        fillColor: fillColor, // 채우기 색깔입니다
-        fillOpacity: fillOpacity, // 채우기 불투명도 입니다
-        */
+        //fillColor: fillColor, // 채우기 색깔입니다
+        //fillOpacity: fillOpacity, // 채우기 불투명도 입니다
       });
-  
       // 지도에 사각형을 표시합니다
       grid_objects[idx].setMap(map);
     }
