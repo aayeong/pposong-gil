@@ -63,6 +63,7 @@
 
 #map .fa-bookmark.active {
     font-weight: 800;
+    color: var(--yellow);
 }
 
 #map .fa-location-crosshairs.active {

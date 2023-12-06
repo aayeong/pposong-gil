@@ -12,7 +12,7 @@ document.querySelector('.bookmark-btn').addEventListener('click', function() {
       .then(response => response.text())
       .then(data => {
         //초기화(이전에 추가된 요소 제거)
-        const elementToDelete = document.querySelector('.bookmark-screen'); // 여기서 '#myElement'는 삭제하려는 요소의 ID나 다른 CSS 선택자일 수 있습니다.
+        const elementToDelete = document.querySelector('.bookmark-screen');
         if (elementToDelete) {
         elementToDelete.remove();
         }
@@ -72,15 +72,28 @@ function showLocation() {
     // 지도 중심좌표를 현위치로 변경
     map.setCenter(locPosition);
   }
-
 }
 
-/*
-import {getTimeStamp} from "js/cal_time.js";
-window.TimeButton = getTimeStamp(4);
-// 시간당 강수량 버튼 시간 계산
-const timeNavBtns = document.querySelectorAll('.time-nav__btn');
-for (let i = 0; i < timeNavBtns.length; i++) {
-    timeNavBtns[i].innerText = window.TimeButton[i];
+/* 1시간 간격의 시간 값 세팅 함수*/
+function calculateTime() {
+  let currentTime = new Date();
+  let hour = currentTime.getHours();
+  let minute = currentTime.getMinutes();
+  let formattedTime;
+  const timeNavBtns = document.querySelectorAll('.time-nav__btn');
+  
+  // 24시간 표시법 적용
+  for (let i = 0; i < timeNavBtns.length; i++) {
+    let calculateHour = hour+i;
+    if(calculateHour>=24) {
+      calculateHour-=24;
+    }
+    // 시간값 00:00 형식으로 변환
+    calculateHour = calculateHour.toString().padStart(2, '0');
+    minute = minute.toString().padStart(2, '0');
+    formattedTime=  calculateHour + ':' + minute;
+    // 버튼의 시간 값 변경
+    timeNavBtns[i].innerText = formattedTime;
+  }
 }
-*/
+calculateTime();
